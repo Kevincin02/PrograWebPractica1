@@ -1,0 +1,29 @@
+1. Descargar Java 17 https://adoptium.net/es/temurin/releases?version=17&utm_source=chatgpt.com
+
+2. Si no lo tienen descargar Maven https://maven.apache.org/download.cgi?utm_source=chatgpt.com
+
+3.  Agregar Maven al path (cambien por la ubicación de archivo que tengan):
+
+[Environment]::SetEnvironmentVariable(
+    "Path",
+    $env:Path + ";C:\Users\Usuario\OneDrive\Documents\Maven\bin",
+    [EnvironmentVariableTarget]::User
+)
+
+4. Proba 
+mvn -version
+& "C:\Users\Usuario\OneDrive\Documents\Maven\apache-maven-3.9.16\bin\mvn.cmd" -version
+
+5. [Environment]::SetEnvironmentVariable(
+    "Path",
+    $env:Path + ";C:\Users\Usuario\OneDrive\Documents\Maven\apache-maven-3.9.16\bin",
+    [EnvironmentVariableTarget]::User
+)
+
+6. mvn -version de nuevo 
+
+7. corremos 
+cd "C:\Users\Usuario\OneDrive\Documents\GitHub\PrograWebPractica1"
+mvn spring-boot:run
+
+8. finalmente http://localhost:8080
